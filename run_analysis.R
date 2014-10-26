@@ -14,7 +14,10 @@
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject.
 
 ##########################################################################################################
-
+# Checking & Installing data.table package
+if (!require("data.table")) {
+        install.packages("data.table")
+}
 
 # Clean up workspace
 rm(list=ls())
